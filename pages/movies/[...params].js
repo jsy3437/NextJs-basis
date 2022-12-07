@@ -23,6 +23,53 @@ export default function Detail({ movie }) {
 					</div>
 				</div>
 			</div>
+			<style jsx>
+				{`
+					.movie h4 {
+						font-size: 30px;
+						text-align: center;
+						margin-bottom: 0;
+					}
+					.movie p {
+						font-size: 19px;
+						text-align: center;
+						color: rgb(41, 41, 41);
+					}
+					.movie__card {
+						width: 100%;
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						margin: auto;
+						gap: 20px;
+					}
+					.movie__card img {
+						width: 100%;
+						margin: 0 0 0 auto;
+						padding-left: 5px;
+					}
+					ul {
+						display: flex;
+						margin: 0;
+					}
+					li {
+						font-size: 14px;
+						margin-right: 7px;
+					}
+					.movie__card p {
+						font-size: 17px;
+						text-align: start;
+					}
+					@media screen and (max-width: 500px) {
+						.movie__card {
+							grid-template-columns: 1fr;
+							padding: 10px;
+						}
+						.movie__card img {
+							padding-left: 0;
+						}
+					}
+				`}
+			</style>
 		</div>
 	);
 }
