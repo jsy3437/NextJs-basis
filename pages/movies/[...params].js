@@ -77,7 +77,7 @@ export default function Detail({ movie }) {
 export async function getServerSideProps({ params: { params } }) {
 	const id = Number(params[0]);
 	const movie = await (
-		await fetch(`http://localhost:3000/api/movies/${id}`)
+		await fetch(`https://next-js-basis.vercel.app/api/movies/${id}`)
 	).json();
 
 	return {

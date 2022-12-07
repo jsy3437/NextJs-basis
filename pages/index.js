@@ -54,7 +54,7 @@ export default function Home({ results }) {
 
 export async function getServerSideProps() {
 	const { results } = await (
-		await fetch('https://next-js-basis.vercel.app//api/movies')
+		await fetch('https://next-js-basis.vercel.app/api/movies')
 	).json();
 	return {
 		props: {
